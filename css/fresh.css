@@ -1,0 +1,30 @@
+
+header{
+    /*padding-top: 55px;*/
+
+}
+
+nav {   
+    /*float: right;*/
+
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #1b7340;
+    font-weight: bold;
+    
+}
+
+.bg-light{
+    background-color: white;
+}
+
+
+/*Section-1*/
+#section-1{
+    min-height:350px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+

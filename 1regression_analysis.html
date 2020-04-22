@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/fresh.css">
+    <link rel="icon" href="freshlogo.gif">
+    <title>Regression Analysis</title>
+   
+</head>
+
+<header class="container" style="vertical-align: middle; background-color: white;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white justify-content-between" style="padding-top: 25px;">
+        <a class="navbar-brand" href="#"><img src="freshlogo.gif"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#">About</a>
+            <a class="nav-item nav-link active" href="#"><b>Blog & Games</b></a>
+            <a class="nav-item nav-link" href="#">Contact</a>
+          </div>
+        </div>
+      </nav>
+</header>
+
+<body>
+    <section id="section-1" class="container" >
+        <!--<h1>Regression Analysis for Marketing & Business Insights</h1>-->
+        <h1>Regression Analysis: the Hardest Working Method</h1>
+        <img src="1RegressionHusky.jpg">
+        <p></p>
+    </section>
+    <section class="container">
+        <!--<h1>Introducing the hardest working method!</h1>-->
+        <p>Ahh… regression analysis…. the Siberian Husky of data science.  In the same way that these dogs loyally forged paths to new lands across the frigid arctic frontier, regression analysis has blazed the trail to higher analytical accomplishments.  Ordinary least square (OLS), linear regression, analysis of variance (ANOVA), multiple ANOVA (MANOVA) are all terms referring to the powerful technique of using correlation and variation of different terms to quantify relationships between the variables.  Hundreds of methods have started with this basic approach and introduced different flavors.  Figure 1 like the biological tree of life illustrates branches, connections and the evolution of the many methods stemming from this fundamental design.</p>
+        <img src="regressiontreeoflife.jpg", width="800">
+        <p style="color: gray;"><i>Figure 1: Regression Tree of Life</i></p>  
+        <p>Phew! I am exhausted just looking at all the options to approach a question. From my experience, the vast majority of business insights can be obtained from linear regression, the simplest approach.  In an applied business setting, it is so much more important to spend time understanding the context of the data than using complex, niche statistical techniques.  Let’s spend the rest of this article developing an intuition for this powerful method.</p>
+    </section>
+    <section class="container">
+        <h1>What does it do?</h1>
+        <p>Many business questions can be posed in a regression framework.  
+            For example, did a price change (independent variable) impact sales (dependent variable)?  
+            Or did the color of the ad (independent variable) impact the click through rate (dependent variable)?  
+            The dependent variable is the item you want impacted by the other aspects of the data and is denoted by y.  
+            The independent variables are symbolized by <b>x</b>’s.  The impact of the <b>x</b>’s is portrayed by <b>β</b>‘s.  
+            Putting it all together, a regression analysis is the effort of defining this equation for a particular set of data:</p>
+        <p style="text-align: center;"><b>y = β<sub>0</sub> + β<sub>1</sub>x<sub>1</sub> + ε</b></p>
+        <p>One last important piece to the equation is unexplained variation.  
+            There is messiness in the real world and life which leads to imperfect patterns.  
+            This imperfection is represented by <b>ε</b> and is called the error term.</p>
+    </section>
+    <section class="container">
+        <h1>What questions can it answer?</h1>
+        <p>Now that we have established that regression analysis is powerful and we know what it does, how do we use the results?  
+            For answering business questions, there are three main results that we need to discuss. 
+            The R<sup>2</sup> value gives an indication of how much variation of the y is explained by the x’s and β’s.  
+            It can kind of be thought of as a percentage.  
+            If it is 0.5 then ~50% of the variation in y is explained by the regression equation (excluding the error).  
+            Ok.  Now the really exciting part for applied business analytics.  
+            The coefficients (β’s) tell you how a change in the x impacts the y variable, just like the slope from secondary school.  
+            So if the β<sub>1</sub> is 3 then an increase of 1 in x<sub>1</sub> increases y by 3.  
+            The final piece of the interpretation of the coefficients (β’s) is whether the association between x<sub>1</sub> and y is strong or weak. 
+            This is measured by a p-value and is called the statistical significance. 
+            It can be thought of as the chance that there is no real relationship between the x and the y. 
+            For example, if the p-value on β<sub>1</sub> is 0.1 then there is roughly a 10% chance that the association is just random and not real.</p>
+    </section>
+    <section class="container">
+        <h1>Thanks… I guess… but what does it all mean?</h1>
+        <p>I always feel the need to put knowledge to use in an extremely applied setting.  Thus, I would like to offer the game below.  Go ahead… do data!<br><br>  
+            Problem: We would like to know if our ads are generating brand awareness.  Does spending on ads increase the impressions? By how much?<br><br>
+            To do this we need to answer the following questions.  At the bottom of the page are the answers if you want to check.<br>
+            Q1 What should be the dependent variable (y)?<br>
+            Q2 What should be the explanatory variable (x)?<br>
+            Q2 Is the model a good model?<br>
+            Q3 Can you find an outlier?<br>
+            Q4 What happens when you add/remove Ad Color as another x variable?<br>        
+        </p>
+        <div>
+            <p style = "text-align: center;"><b><i>JAVASCRIPT GAME GOES HERE</i></b></p>
+        </div>
+        <p>Answers:<br>
+            A1<br>
+            A2<br>
+            A3<br>
+            A4<br>
+            </p>
+    </section>
+
+ <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+ <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+
+<footer class="container">
+
+</footer>
+
+
+</html>
