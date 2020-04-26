@@ -1,6 +1,4 @@
 
-
-
 .navbar-light .navbar-nav .nav-link {
     color: #1b7340;
     font-weight: bold;
@@ -8,4 +6,16 @@
 }
 
 
+footer p{
+    margin: 0;
+}
+
+footer a{
+    color: white;
+}
+footer a:hover{
+    
+    color: lightgray;
+    background-color: transparent;
+}
 
