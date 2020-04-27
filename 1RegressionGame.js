@@ -13,7 +13,7 @@ var col = math.matrix([0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0
 ]);
 //https://online.stat.psu.edu/stat462/node/132/     (x'x)-1*x'y
 var x=math.matrix([int,adx,col]); 
-
+var sss=1+1;
 console.log(x);
 
 const beta1 = math.multiply(math.inv(math.multiply(x,math.transpose(x))),math.multiply(x,math.transpose(imp)))
