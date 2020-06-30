@@ -14,17 +14,29 @@ var col = math.matrix([0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0
 //https://online.stat.psu.edu/stat462/node/132/     (x'x)-1*x'y
 var x=math.matrix([int,adx,col]); 
 
-console.log(x);
 
-const beta1 = math.multiply(math.inv(math.multiply(x,math.transpose(x))),math.multiply(x,math.transpose(imp)))
 
+var beta1 = math.multiply(math.inv(math.multiply(x,math.transpose(x))),math.multiply(x,math.transpose(imp)))
+//beta1=math.round(beta1[1]);
+
+
+beta1 = beta1.map(function(each_element){
+  return Number(each_element.toFixed(2));
+});
+console.log(beta1);
+var c=document.getElementById("regcanvas");
+//var ctx = c.getContext("2d");
 
 $(document).ready(function(){
 
   $('#run-regression').on('click', function(){
-    const beta = math.multiply(math.inv(math.multiply(x,math.transpose(x))),math.multiply(x,math.transpose(imp)))
+    var beta = math.multiply(math.inv(math.multiply(x,math.transpose(x))),math.multiply(x,math.transpose(imp)))
+    beta = beta.map(function(each_element){
+      return Number(each_element.toFixed(0));
+      
+    });
     document.getElementById('reg-results').innerHTML = beta;
-    
+    //ctx.fillText("toString(beta)",90,90);
   });
 
 });
